@@ -1,38 +1,186 @@
-<!doctype  html> <!--     index.html     --> 
-<html><head> 
-<meta charset=utf-8"/>
-<meta name="viewport" content="width=device-width, initial-scale=1"/>
-<style>
-  body {font-family: Verdana, sans-serif; font-size:0.8em;}
-  header, nav, section, article, footer
-  {border:1px solid gray; margin:5px; padding:8px;}
-  section#displayArea { height:210px; }
-  nav ul {margin:0; padding:0;}
-  nav ul li {display:inline; margin:5px; }
-  a {text-decoration:none;}
-  #id_form {width:100px; height:14px; color:red;}
-</style>
-<script  type="text/javascript">
-  function  fnTest(){
-  document.write("자바스크립트 환영!")
-  alert("자바 스크립트 환영!!");
-  }
-</script>
-<title>자바 스크립트 실습</title>
-</head>
-<body>
-  <header>
-    <h2>20211105 박동준 과제 리스트</h2> </header>
-  <nav>
-    <ul>
-      <li><a href="https://javaroadmap.github.io">설명서버</a></li>
-      <li><a href="https://www.data.go.kr">오픈데이터</a></li>
-    </ul></nav>
-  <section>
-    <h2>자바 스크립트 실행합니다</h2>
-     <script>fnTest();</script>
-  </section>
-  <footer>
-    <p>&copy;  20XX Made by Korea.  All rights reserved.</p></footer> 
-</body>
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="박동준의 GitHub Pages 개인 사이트입니다. 작업 기록, 관심 분야, 연락처를 한 곳에 정리했습니다."
+    />
+    <title>박동준 | GitHub Pages</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700;800&family=Space+Grotesk:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+    <script src="./script.js" defer></script>
+  </head>
+  <body>
+    <div class="page-shell">
+      <header class="site-header">
+        <a class="brand" href="#top">
+          <span class="brand-mark">DJ</span>
+          <span>djpark0603</span>
+        </a>
+        <nav class="site-nav" aria-label="주요 메뉴">
+          <a href="#about">About</a>
+          <a href="#focus">Focus</a>
+          <a href="#contact">Contact</a>
+        </nav>
+      </header>
+
+      <main id="top">
+        <section class="hero reveal">
+          <p class="eyebrow">GitHub Pages Starter</p>
+          <h1>
+            박동준의 작업 공간을
+            <span>웹 한 장으로 정리했습니다.</span>
+          </h1>
+          <p class="hero-copy">
+            학습 기록, 실험 중인 아이디어, 앞으로 만들 프로젝트를 한곳에 모으는
+            개인 사이트입니다. 지금은 시작 버전이지만, 바로 공개해도 어색하지
+            않도록 기본 구조와 스타일을 잡아뒀습니다.
+          </p>
+          <div class="hero-actions">
+            <a
+              class="button button-primary"
+              href="https://github.com/djpark0603"
+              target="_blank"
+              rel="noreferrer"
+            >
+              GitHub 보기
+            </a>
+            <a class="button button-secondary" href="mailto:pooree999@gmail.com">
+              이메일 보내기
+            </a>
+          </div>
+          <ul class="hero-metrics" aria-label="핵심 정보">
+            <li>
+              <strong>01</strong>
+              <span>개인 GitHub Pages 홈</span>
+            </li>
+            <li>
+              <strong>24/7</strong>
+              <span>정적 사이트로 간단 배포</span>
+            </li>
+            <li>
+              <strong>Next</strong>
+              <span>프로젝트 카드 추가 확장 가능</span>
+            </li>
+          </ul>
+        </section>
+
+        <section class="panel reveal" id="about">
+          <div class="section-heading">
+            <p class="eyebrow">About</p>
+            <h2>지금 필요한 최소 구성을 먼저 올렸습니다.</h2>
+          </div>
+          <div class="grid two-column">
+            <article class="card">
+              <h3>왜 이렇게 시작했는가</h3>
+              <p>
+                GitHub Pages는 복잡한 서버 없이도 빠르게 공개할 수 있습니다.
+                그래서 첫 버전은 소개, 링크, 향후 업데이트 자리만 명확하게
+                잡아두는 방식으로 구성했습니다.
+              </p>
+            </article>
+            <article class="card">
+              <h3>이후 바로 바꾸기 좋은 부분</h3>
+              <p>
+                소개 문구, 프로젝트 카드, 기술 스택, 외부 링크만 수정하면 바로
+                자신만의 포트폴리오 사이트로 확장할 수 있습니다.
+              </p>
+            </article>
+          </div>
+        </section>
+
+        <section class="panel accent reveal" id="focus">
+          <div class="section-heading">
+            <p class="eyebrow">Focus</p>
+            <h2>현재 사이트에 넣어둔 핵심 블록</h2>
+          </div>
+          <div class="grid three-column">
+            <article class="card">
+              <h3>소개</h3>
+              <p>
+                방문자가 첫 화면에서 누구의 페이지인지 바로 알 수 있도록 이름,
+                GitHub ID, 연락 수단을 묶었습니다.
+              </p>
+            </article>
+            <article class="card">
+              <h3>업데이트 기반</h3>
+              <p>
+                프로젝트 경험이 늘어나면 카드만 추가해도 구조가 깨지지 않도록
+                반응형 레이아웃으로 잡았습니다.
+              </p>
+            </article>
+            <article class="card">
+              <h3>배포 단순성</h3>
+              <p>
+                순수 HTML/CSS/JS만 사용해서 GitHub Pages에 바로 올릴 수 있게
+                했습니다. 별도 빌드 도구가 필요 없습니다.
+              </p>
+            </article>
+          </div>
+        </section>
+
+        <section class="panel reveal">
+          <div class="section-heading">
+            <p class="eyebrow">Roadmap</p>
+            <h2>다음에 붙이면 좋은 항목</h2>
+          </div>
+          <div class="timeline">
+            <article class="timeline-item">
+              <span class="timeline-step">01</span>
+              <div>
+                <h3>프로젝트 카드 추가</h3>
+                <p>
+                  대표 저장소 3개 정도를 골라 스크린샷과 설명, 링크를 연결하면
+                  포트폴리오 페이지로 바로 활용할 수 있습니다.
+                </p>
+              </div>
+            </article>
+            <article class="timeline-item">
+              <span class="timeline-step">02</span>
+              <div>
+                <h3>이력/기술 스택 정리</h3>
+                <p>
+                  사용 언어, 프레임워크, 학습 중인 분야를 짧게 정리하면 방문자가
+                  페이지 목적을 더 빠르게 이해합니다.
+                </p>
+              </div>
+            </article>
+            <article class="timeline-item">
+              <span class="timeline-step">03</span>
+              <div>
+                <h3>커스텀 도메인 연결</h3>
+                <p>
+                  원하면 나중에 도메인을 연결해도 되고, 지금 상태로는
+                  `djpark0603.github.io` 주소로 바로 공개할 수 있습니다.
+                </p>
+              </div>
+            </article>
+          </div>
+        </section>
+      </main>
+
+      <footer class="site-footer reveal" id="contact">
+        <div>
+          <p class="eyebrow">Contact</p>
+          <h2>연결</h2>
+        </div>
+        <div class="footer-links">
+          <a href="https://github.com/djpark0603" target="_blank" rel="noreferrer">
+            github.com/djpark0603
+          </a>
+          <a href="mailto:pooree999@gmail.com">pooree999@gmail.com</a>
+        </div>
+        <p class="footer-copy">
+          <span id="current-year"></span> Park Dongjun. Built for GitHub Pages.
+        </p>
+      </footer>
+    </div>
+  </body>
 </html>
